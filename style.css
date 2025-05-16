@@ -119,6 +119,35 @@
         max-width: 100%;
         height: auto;
     }
+    /* Đảm bảo nút hiển thị đúng bên dưới ảnh */
+    .btn {
+        margin-top: 20px;
+        position: relative !important;
+        bottom: unset !important;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #btn__letter {
+        font-size: 1rem;
+        padding: 10px 20px;
+        margin-bottom: 30px;
+    }
+
+    .content .right {
+        margin-bottom: 20px;
+    }
+
+    /* Ngăn hình ảnh đẩy các phần tử khác xuống */
+    .box__account {
+        margin-bottom: 10px;
+    }
+
+    /* Tránh tràn lề */
+    body {
+        overflow-x: hidden;
+    }
 }
 
 }
