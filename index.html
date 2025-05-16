@@ -257,14 +257,15 @@
         return app
     }
     const fcMobile = mobile()
-    if(window.innerWidth < 768){
-        setTimeout(()=>{
-            fcMobile.timeout("26", document.querySelector(".day"))
-        },5000)
-        setTimeout(()=>{
-            fcMobile.timeout("10", document.querySelector(".month"))
-        },6000)
-    }
+   if(window.innerWidth < 768){
+    const [day, month] = datetxt.split('/');
+    setTimeout(()=>{
+        fcMobile.timeout(day, document.querySelector(".day"))
+    },5000)
+    setTimeout(()=>{
+        fcMobile.timeout(month, document.querySelector(".month"))
+    },6000)
+}
     
 </script>
 </html>
