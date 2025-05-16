@@ -1,53 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .left, .right {
-        width: 100%;
-        text-align: center;
-    }
-
-    .flag__birthday {
+@media screen and (max-width:768px) {
+    #wrapper .content {
         flex-direction: column;
         align-items: center;
     }
 
-    .flag__left, .flag__right {
-        width: 80% !important;
-        max-width: 300px;
+    #wrapper .content .left,
+    #wrapper .content .right {
+        width: 100% !important;
     }
 
-    .box__account .image img {
-        width: 150px;
+    .content .left,
+    .content .right {
+        align-items: center;
+        justify-content: center;
     }
 
-    .cricle {
+    .right .box__account {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right .box__account .image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn {
         margin-top: 20px;
-        font-size: 1rem;
-    }
-
-    .btn button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .decorate_star, .decorate_flower--one, .decorate_flower--two, .decorate_flower--three, .decorate_bottom, .smiley__icon {
-        transform: scale(0.8);
-    }
-
-    .letter__border {
-        width: 95%;
-        margin: auto;
-    }
-
-    .text__letter p {
-        font-size: 1rem;
+        position: relative;
+        bottom: unset;
     }
 }
 
